@@ -10,4 +10,5 @@ public class Formatos : BaseEntity
 {
     [Required]
     public string NombreFormato { get; set; }
+    public ICollection<ModuloNotificaciones> ModuloNotificaciones { get; set;}
 }

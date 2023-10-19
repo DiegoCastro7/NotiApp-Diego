@@ -10,4 +10,5 @@ public class PermisosGenericos : BaseEntity
 {
     [Required]
     public string NombrePermiso { get; set; }
+    public ICollection<GenericosVsSubmodulos> GenericosVsSubmodulos { get; set;}
 }

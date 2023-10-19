@@ -10,4 +10,6 @@ public class HiloRespuestaNotificacion : BaseEntity
 {
     [Required]
     public string NombreTipo { get; set; }
+    public ICollection<BlockChain> BlockChains { get; set; }
+    public ICollection<ModuloNotificaciones> ModuloNotificaciones { get; set; }
 }

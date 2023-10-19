@@ -10,4 +10,6 @@ public class ModulosMaestros : BaseEntity
 {
     [Required]
     public string NombreModulo { get; set; }
+    public ICollection<RolVsMaestro> RolVsMaestros { get; set; }
+    public ICollection<MaestrosVsSubmodulos> MaestrosVsSubmodulos { get; set; }
 }

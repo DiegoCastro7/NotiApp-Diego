@@ -10,4 +10,5 @@ public class Submodulos : BaseEntity
 {
     [Required]
     public string NombreSubmodulo { get; set; }
+    public ICollection<MaestrosVsSubmodulos> MaestrosVsSubmodulos { get; set; }
 }

@@ -10,4 +10,5 @@ public class TipoRequerimiento : BaseEntity
 {
     [Required]
     public string Nombre { get; set; }
+    public ICollection<ModuloNotificaciones> ModuloNotificaciones { get; set; }
 }
